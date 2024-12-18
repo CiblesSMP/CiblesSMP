@@ -1,0 +1,265 @@
+/* -- MAIN -- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f9f6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #7ddba7;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #009688;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    color: #00796B;
+}
+
+h3 {
+    color: #4CAF50;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #00796B;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    nav a {
+        margin: 5px 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+code {
+    background-color: #2d333b; /* Dark gray background */
+    color: #adbac7; /* Light gray text color */
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* Modern monospaced font stack */
+    font-size: 14px; /* Slightly smaller font */
+    padding: 0.2em 0.4em; /* Spacing inside the code block */
+    border: 1px solid #444c56; /* Slightly darker border */
+    border-radius: 6px; /* Rounded corners */
+    white-space: pre-wrap; /* Preserve line breaks but allow wrapping */
+    word-wrap: break-word; /* Prevent overflow */
+}
+
+pre code {
+    display: block; /* Makes code blocks occupy full width */
+    padding: 1em; /* Extra padding for blocks */
+    overflow-x: auto; /* Horizontal scrolling for long code */
+    background-color: #2d333b; /* Ensure block code matches inline */
+    border: 1px solid #444c56;
+}
+
+strong {
+    color: #1a4033 ;
+}
+
+/* -- SECTION CONTAINERS -- */
+.container {
+    background: #7ddba7; /* Lighter cyan background */
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 
+                0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 
+                0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container h3 {
+    font-weight: 600;
+    color: #006064; /* Dark cyan */
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #a9dbbf; /* Soft cyan */
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.header-container {
+    display: inline-block;
+    background-color: #a9dbbf;
+    color: #004d52;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.header-container h1, h2 {
+    margin: 0 0 0 0;
+}
+
+.header-container hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.last-updated {
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* -- DISCORD SERVERS -- */
+.server-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px; /* Adds gap between server boxes */
+    justify-items: center;
+    padding: 20px; /* Adds padding around the grid */
+}
+
+.server-box {
+    display: flex;
+    align-items: center;
+    background-color: #36393f; /* Slightly lighter Discord background */
+    border-radius: 50px;
+    padding: 10px;
+    width: 100%; /* Ensures server box fills its container */
+    max-width: 500px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.server-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.server-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.server-name {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.server-name:hover {
+    color: #7289da; /* Discord blurple on hover */
+}
+
+/* -- RULES -- */
+.rules {
+    font-family: 'Arial', sans-serif;
+    color: black;
+    margin-left: 5px;
+}
+
+.rule {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding: 8px 0;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 25px; /* Space for the bullet */
+}
+
+.rule:hover {
+    background-color: #f0f8ff;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.rule:active {
+    background-color: #b0e0e6;
+}
+
+/* -- USER LISTS -- */
+.user-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-radius: 25px;
+    padding: 8px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-item:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.user-pfp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.user-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
