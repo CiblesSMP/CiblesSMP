@@ -1,0 +1,466 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"gamec",
+				"gamecover_sheet"
+			],
+			[
+				"web_Get",
+				"web_get_icon"
+			],
+			[
+				"last_pl",
+				"last_played_fetch_variables"
+			],
+			[
+				"format",
+				"format_time_difference"
+			],
+			[
+				"tray",
+				"trayIcon_refreshButton"
+			],
+			[
+				"Web",
+				"WebserverIP"
+			],
+			[
+				"home",
+				"homepage-button"
+			],
+			[
+				"system",
+				"SystemTrayThread"
+			],
+			[
+				"confi",
+				"configurationSetup"
+			],
+			[
+				"a",
+				"container"
+			],
+			[
+				"execut",
+				"executable_dir"
+			],
+			[
+				"web",
+				"WebserverIP"
+			],
+			[
+				"webse",
+				"WebserverPort"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"terminus",
+				"Terminus: Open Default Shell in Panel"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"code",
+				"Codeium: Enable Plugin"
+			],
+			[
+				"cod",
+				"Codeium: Provide Auth Token"
+			],
+			[
+				"ci",
+				"Codeium: Sign In"
+			],
+			[
+				"package contr",
+				"Package Control: Install Package"
+			],
+			[
+				"terminal",
+				"Terminal: Open"
+			],
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"convert ",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markdonw",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"term",
+				"Terminal: Open"
+			],
+			[
+				"inno",
+				"Set Syntax: Inno Setup"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"discord",
+				"Preferences: Discord Rich Presence Settings"
+			],
+			[
+				"keybin",
+				"Preferences: Key Bindings"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"waka",
+				"WakaTime: Open Dashboard"
+			],
+			[
+				"wakatime",
+				"WakaTime: Open Dashboard"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: List Packages"
+			],
+			[
+				"install ",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 136.800003052,
+		"history":
+		[
+			"clear"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Projects/Programming/Web/CiblesSMP"
+	],
+	"file_history":
+	[
+		"/C/Users/zcome/Documents/CiblesSMP Website/static/styles.css",
+		"/C/Users/zcome/Documents/CiblesSMP Website/SMPInfo.html",
+		"/C/Users/zcome/Documents/styles.css",
+		"/C/Users/zcome/Documents/SMPInfo.html",
+		"/C/Users/zcome/Documents/stlyes.css",
+		"/D/Projects/Programming/Python/GameSessionManager/static/styles.css",
+		"/D/Projects/Programming/Python/GameSessionManager/LICENSE.md",
+		"/D/Projects/Programming/Python/GameSessionManager/README.md",
+		"/D/Projects/Programming/Python/GameSessionManager/commit.py",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/list_games.html",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/add_entry.html",
+		"/D/Projects/Programming/Python/GameSessionManager/scripts/globalFunctions.js",
+		"/D/Projects/Programming/Python/GameSessionManager/COPYINFO.md",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/check_game_info.html",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/base.html",
+		"/D/Projects/Programming/Python/GameSessionManager/packager.py",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/index.html",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/about.html",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/changelog.html",
+		"/D/Projects/Programming/Python/GameSessionManager/changelog.md",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/stopwatch.html",
+		"/D/Projects/Programming/Test Files/test.py",
+		"/D/Projects/Programming/Python/GameSessionManager/GameSessionManager.py",
+		"/D/Projects/Programming/Python/GameSessionManager/assets/json_data.json",
+		"/D/Pokemon/Saves/folderFormattingInfo.txt",
+		"/C/Program Files (x86)/Steam/steamui/skins/SpaceTheme-Steam-main/skin.json",
+		"/C/Windows/System32/CustomCmds/gamesessionmanager.bat",
+		"/D/Projects/Programming/Python/GameSessionManager/build.py",
+		"/C/Users/zcome/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0/LocalCache/local-packages/Python312/site-packages/pyqt_custom_titlebar_window/customTitlebarWindow.py",
+		"/D/Projects/Programming/Python/GameSessionManager/.gitignore",
+		"/D/Projects/Programming/Python/GameSessionManager/LICENSE",
+		"/D/Projects/Programming/Python/GameSessionManager/scripts/stopwatchMode.js",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/game_info.html",
+		"/D/Projects/Programming/Python/GameSessionManager/scripts/dropdown.js",
+		"/D/Projects/Programming/Python/GameSessionManager/scripts/requiredLabels.js",
+		"/D/Projects/Programming/Python/GameSessionManager/config/sheetid.txt",
+		"/D/Projects/Programming/Python/GameSessionManager/.git/MERGE_MSG",
+		"/D/Projects/Programming/Python/GameSessionManager/gsmsetup.iss",
+		"/D/Projects/Programming/Python/gamesessionmanagerpackage/GSMFull.py",
+		"/D/Projects/Programming/Python/GameSessionManager/AutoReadmeUpdater.py",
+		"/C/Users/zcome/AppData/Roaming/gamesessionmanager/sheetid.txt",
+		"/D/Music/Albums/Hot Pink/desktop.ini",
+		"/C/Windows/System32/ls.bat",
+		"/C/Windows/System32/clear.bat",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/sign_up.html",
+		"/D/Projects/Programming/Python/GameSessionManager/gamesessionmanager.py",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/track_now.html",
+		"/D/Projects/Programming/Python/GameSessionManagerBackup/packaged_files.py",
+		"/D/Projects/Programming/Python/GameSessionManager/packaged_files.py",
+		"/C/Windows/System32/gamesessionmanager.bat",
+		"/D/Recovered_ 4_27_40/Preview/profiles.xml",
+		"/C/Program Files (x86}/Acrylic DNS Proxy/AcrylicHosts.txt",
+		"/D/Downloads/nginx-1.27.2/conf/nginx.conf",
+		"/C/Program Files (x86)/Acrylic DNS Proxy/AcrylicHosts.txt",
+		"/C/Program Files (x86)/Acrylic DNS Proxy/AcrylicConfiguration.ini",
+		"/C/Program",
+		"/C/Files",
+		"/C/(x86}/Acrylic",
+		"/C/DNS",
+		"/C/Proxy/AcrylicHosts.txt",
+		"/D/Projects/Programming/Python/GameSessionManager/templates/error.html",
+		"/D/Projects/Programming/Python/GameSessionManager/static/error.css",
+		"/C/Program Files (x86)/Acrylic DNS Proxy/AcrylicConfguration.ini",
+		"/C/Program Files (x86)/Acrylic DNS Proxy/acrylicconfguration.ini",
+		"/D/Projects/Programming/Python/TurtleSpiral/TurtleSpiral.py",
+		"/D/Projects/Programming/Python/GameSessionManager/gamesessionmanager.bat",
+		"/D/Projects/Programming/Python/GameSessionManager/app.py",
+		"/D/Projects/Programming/Python/GameSessionManager/game_info.html",
+		"/D/Projects/Programming/Python/GameSessionManager/check_game_info.html",
+		"/D/Projects/Programming/Python/GameSessionManager/add_entry.html",
+		"/D/Projects/Programming/Python/GameSessionManager/index.html",
+		"/C/kiosk.ps1",
+		"/C/logon.bat",
+		"/C/startup.bat",
+		"/D/Projects/Programming/Python/GameSessionManager/sheetid.txt",
+		"/D/SteamLibrary/steamapps/common/Stardew Valley/Mods/[CP] Elle's Cuter Cats/config.json",
+		"/D/Projects/Programming/Python/TurtleFlowers/TurtleFlowers.py",
+		"/D/Projects/Programming/GoogleScriptTrigger.bat",
+		"/D/Projects/Programming/Python/GoogleScriptTrigger/GScriptTrigger.py",
+		"/D/Projects/Programming/Python/ModuloTrueFalseLoop/ModuloTrueFalseLoop.py",
+		"/D/Projects/Programming/Minecraft/Texture Packs/UltraModded Server CIT Pack/assets/minecraft/citresewn/cit/zeninium_ingot.properties",
+		"/D/Projects/Programming/Python/TimeConverter/TimeConverter.py",
+		"/D/Projects/Programming/Python/FibonacciSequence/FibonacciSequence.py",
+		"/D/Projects/Programming/Python/CollatzSequence/CollatzSequence.py",
+		"/D/Projects/Programming/Python/TurtleStarDrawer/TurtleStarDrawer.py",
+		"/D/Projects/Programming/Python/ReplaceStringEmailExample/RepalceStringEmailExample.py",
+		"/D/Projects/Programming/Python/SecondsToMinutesConverter/SecondsToMinutesConverter.py",
+		"/D/Projects/Programming/Minecraft/Texture Packs/UltraModded Server CIT Pack/pack.mcmeta",
+		"/D/Projects/Programming/Python/ModuloTrueFalseLoop/ModuleTrueFalseLoop.py",
+		"/D/Software/VMAudioBack/VMAB.cmd",
+		"/D/Software/Modrinth/profiles/Fabric Base Modpack (2)/config/fancymenu/user_variables.db",
+		"/D/discrakt/credentials.ini",
+		"/C/Users/zcome/AppData/Roaming/Kodi/kodi.log",
+		"/C/Users/zcome/AppData/Roaming/Kodi/kodi.old.log",
+		"/D/VMS/Windows XP Pro x64/Windows XP Professional x64 Edition.vmx",
+		"/D/VMS/Windows XP Pro x64/'Windows",
+		"/D/VMS/Windows XP Pro x64/XP",
+		"/D/VMS/Windows XP Pro x64/Windows XP Professional x64 Edition.vmxf",
+		"/D/VMS/Windows XP Pro x64/Professional",
+		"/D/VMS/Windows XP Pro x64/x64",
+		"/D/VMS/Windows XP Pro x64/Edition.vmx'",
+		"/E/2019-08-26-08-49-30/joblog.jdb3",
+		"/C/logon.ahk"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 56.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 102.400001526
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 150.399993896
+	},
+	"output.out":
+	{
+		"height": 102.400001526
+	},
+	"pinned_build_system": "",
+	"project": "Cibles SMP Website.sublime-project",
+	"replace":
+	{
+		"height": 52.8
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 499.8,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Projects\\Programming\\Unity\\Modding\\ATLYSS\\LemmeKissDaNPC\\LemmeKissDaNPC.sublime-project"
+			]
+		],
+		"width": 379.6
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
