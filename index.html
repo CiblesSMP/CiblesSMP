@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script src="/CiblesSMP/importTemplates.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +12,26 @@
 </head>
 
 <body>
-    <div id="header"></div>
-    <div id="nav"></div>
+    <header>
+        <h1>Cibles SMP</h1>
+    </header>
+
+    <nav>
+        <div class="dropdown">
+            <a href="/CiblesSMP/" class="dropbtn">Server Information</a>
+            <div class="dropdown-content">
+                <a href="/CiblesSMP/#server-info">Server Info</a>
+                <a href="/CiblesSMP/#servers">Servers</a>
+                <a href="/CiblesSMP/#rules">Official Rules</a>
+                <a href="/CiblesSMP/#goodfaith">Good Faith Rules</a>
+                <a href="/CiblesSMP/#mod-faq">Client-Side Mod FAQ</a>
+                <a href="/CiblesSMP/#nations">Official Nations</a>
+                <a href="/CiblesSMP/#war-guidelines">Official War Guidelines</a>
+                <a href="/CiblesSMP/#how-to-join">How to Join</a>
+            </div>
+        </div>
+        <a href="/CiblesSMP/news">Community News</a>
+    </nav>
 
     <div class="viewcount" id="viewcount">
         <p style="font-size: 1.2em; margin: 0; font-weight: bold;">Views:</p>
@@ -415,21 +435,5 @@
         <p>DISCLAIMER: As of the time of writing, this website is not [yet] fully endorsed by CiblesGD or any of her subsidiaries. This is a community website for the time being, but this is subject to change depending on Cibles' opinion on it.</p>
     </footer>
 </body>
-
-<script>
-    window.onload = function() {
-        // Load header
-        fetch('/CiblesSMP/header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data)
-            .catch(error => console.error('Error loading header:', error));
-        
-        // Load navigation
-        fetch('/CiblesSMP/nav.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('nav').innerHTML = data)
-            .catch(error => console.error('Error loading nav:', error));
-    };
-</script>
 
 </html>
