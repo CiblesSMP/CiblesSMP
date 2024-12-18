@@ -2,15 +2,15 @@ from flask import Flask, send_from_directory
 
 app = Flask(__name__, static_folder=".", static_url_path="")
 
-@app.route("/")
+@app.route("/CiblesSMP/")
 def serve_index():
     return send_from_directory(".", "index.html")
 
-@app.route("/news")
+@app.route("/CiblesSMP/news")
 def serve_news():
     return send_from_directory(".", "news.html")
 
-@app.route("/<path:filename>")
+@app.route("/CiblesSMP/<path:filename>")
 def serve_file(filename):
     return send_from_directory(".", filename)
 
