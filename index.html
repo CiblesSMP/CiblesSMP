@@ -25,6 +25,50 @@
         <a href="#how-to-join">How to Join</a>
     </nav>
 
+    <div class="container viewcount" id="viewcount">
+        <p style="font-size: 1.2em; margin: 0; font-weight: bold;">Views:</p>
+        <p id="view-counter" style="font-size: 2em; margin: 10px 0; font-weight: bold; letter-spacing: 1px;">Loading...</p>
+
+        <script type="module">
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+            import { getFirestore, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+
+            // Your Firebase config
+            const firebaseConfig = {
+                apiKey: "AIzaSyDjbTWTDdhfOp6MUBOC5R9hV8_Lj1RNSes",
+                authDomain: "ciblessmp.firebaseapp.com",
+                projectId: "ciblessmp",
+                storageBucket: "ciblessmp.firebasestorage.app",
+                messagingSenderId: "847287753501",
+                appId: "1:847287753501:web:0202db036f9c935a751ff4"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const db = getFirestore(app);
+            const counterRef = doc(db, "counters", "viewCounter");
+
+            async function incrementViewCount() {
+                try {
+                    const docSnap = await getDoc(counterRef);
+                    const data = docSnap.data();
+
+                    // Increment the counter by 1
+                    await updateDoc(counterRef, {
+                        count: data.count + 1
+                    });
+
+                    // Update the view counter on the webpage
+                    document.getElementById('view-counter').innerText = data.count + 1;
+                } catch (error) {
+                    console.error("Error updating view count: ", error);
+                }
+            }
+
+            // Call the function to increment the view count
+            incrementViewCount();
+        </script>
+    </div>
     <div class="container" id="servers">
         <section>
             <div class="header-container">
