@@ -1,10 +1,23 @@
+/* -- COLOR DESIGN VARIABLES -- */
+:root {
+    --special-text-color: #1ba68a;
+}
+
+
 /* -- MAIN -- */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f9f6;
     color: #333;
+    height: 100%;
     margin: 0;
     padding: 0;
+}
+
+.endofcontent {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
 }
 
 header {
@@ -85,7 +98,11 @@ pre code {
 }
 
 strong {
-    color: #1a4033 ;
+    color: var(--special-text-color);
+}
+
+a {
+    color: var(--special-text-color);
 }
 
 /* -- SECTION CONTAINERS -- */
@@ -283,4 +300,125 @@ strong {
     transform: translateY(-8px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 
                 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* -- DROPDOWN NAVIGATION -- */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown button */
+.dropbtn {
+    background-color: #009688;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 0 15px;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Arrow for dropdown button */
+.dropbtn::after {
+    content: ' ▼';
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Style for the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+/* Style for the links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover effect for the dropdown menu links */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown content when the dropdown button is hovered */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when hovered */
+.dropdown:hover .dropbtn {
+    background-color: #00796b;
+}
+
+/* Style for the individual items in the dropdown */
+.dropdown-content a:hover {
+    background-color: #009688;
+    color: white;
+}
+
+/* -- UNDER CONSTRUCTION CONTAINER -- */
+.under-construction {
+    background: #f2c94c; /* Bright yellow background */
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1000px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 
+                0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+}
+
+.under-construction:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 
+                0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.under-construction h3 {
+    font-weight: 600;
+    color: #3e3e3e; /* Dark gray */
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #ffb600; /* Bright yellow */
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.under-construction p {
+    font-size: 18px;
+    color: #404040; /* Dark gray */
+    margin-top: 20px;
+}
+
+.under-construction .construction-icon {
+    font-size: 50px;
+    color: #ff6600; /* Orange icon for emphasis */
+    margin: 20px 0;
+}
+
+.under-construction .last-updated {
+    background-color: #5f6368;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    cursor: pointer;
 }

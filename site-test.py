@@ -6,6 +6,10 @@ app = Flask(__name__, static_folder=".", static_url_path="")
 def serve_index():
     return send_from_directory(".", "index.html")
 
+@app.route("/news")
+def serve_news():
+    return send_from_directory(".", "news.html")
+
 @app.route("/<path:filename>")
 def serve_file(filename):
     return send_from_directory(".", filename)
