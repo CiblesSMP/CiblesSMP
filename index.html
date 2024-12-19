@@ -39,7 +39,8 @@
             import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
             import { getFirestore, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
 
-            // Your Firebase config
+            // Firbase Config
+            // Yes, I know, the API key is just sitting there, waiting to be used for evil. However, I have the entire firebase app literally set up so the only thing you can change is the view counter. You can only incriment it by one per request. So if you want your IP address blown off the face of the earth by Google Firebase, I dare you to set the view count to 69,000.
             const firebaseConfig = {
                 apiKey: "AIzaSyDjbTWTDdhfOp6MUBOC5R9hV8_Lj1RNSes",
                 authDomain: "ciblessmp.firebaseapp.com",
@@ -99,10 +100,9 @@
     </div>
 
     <script>
-      // Ensure the DOM is fully loaded before executing the script
       document.addEventListener('DOMContentLoaded', function() {
         try {
-          // Array of ad objects
+          // Ads :O
           const ads = [
             {
               link: "https://ciblesgd.junipercreates.com/channel/UC4STm5KlYBHfn_bA6bjsYjQ/p/7485001924799",
@@ -114,17 +114,17 @@
             }
           ];
 
-          // Select a random ad
+          // Get a random ad
           const randomAd = ads[Math.floor(Math.random() * ads.length)];
 
-          // Select the ad area
+          // Get the ad area (only one for right now, maybe more coming soon idk)
           const adArea = document.getElementById("adArea");
           
           if (!adArea) {
             throw new Error("Ad area not found.");
           }
 
-          // Populate the ad area with the selected ad
+          // Put the ad where it goes (beautifully)
           adArea.innerHTML = `
             <a href="${randomAd.link}" target="_blank"></a>
             <img src="${randomAd.imgSrc}" alt="ADVERTISEMENT">`;

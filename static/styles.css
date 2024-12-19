@@ -78,22 +78,22 @@ footer {
 }
 
 code {
-    background-color: #2d333b; /* Dark gray background */
-    color: #adbac7; /* Light gray text color */
-    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; /* Modern monospaced font stack */
-    font-size: 14px; /* Slightly smaller font */
-    padding: 0.2em 0.4em; /* Spacing inside the code block */
-    border: 1px solid #444c56; /* Slightly darker border */
-    border-radius: 6px; /* Rounded corners */
-    white-space: pre-wrap; /* Preserve line breaks but allow wrapping */
-    word-wrap: break-word; /* Prevent overflow */
+    background-color: #2d333b;
+    color: #adbac7;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-size: 14px;
+    padding: 0.2em 0.4em;
+    border: 1px solid #444c56;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 pre code {
-    display: block; /* Makes code blocks occupy full width */
-    padding: 1em; /* Extra padding for blocks */
-    overflow-x: auto; /* Horizontal scrolling for long code */
-    background-color: #2d333b; /* Ensure block code matches inline */
+    display: block;
+    padding: 1em;
+    overflow-x: auto;
+    background-color: #2d333b;
     border: 1px solid #444c56;
 }
 
@@ -107,7 +107,7 @@ a {
 
 /* -- SECTION CONTAINERS -- */
 .container {
-    background: #7ddba7; /* Lighter cyan background */
+    background: #7ddba7;
     border-radius: 20px;
     padding: 30px;
     margin: 20px auto;
@@ -125,10 +125,10 @@ a {
 
 .container h3 {
     font-weight: 600;
-    color: #006064; /* Dark cyan */
+    color: #006064;
     margin-bottom: 10px;
     text-align: center;
-    background-color: #a9dbbf; /* Soft cyan */
+    background-color: #a9dbbf;
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
@@ -168,18 +168,18 @@ a {
 .server-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 50px; /* Adds gap between server boxes */
+    gap: 50px;
     justify-items: center;
-    padding: 20px; /* Adds padding around the grid */
+    padding: 20px;
 }
 
 .server-box {
     display: flex;
     align-items: center;
-    background-color: #36393f; /* Slightly lighter Discord background */
+    background-color: #36393f;
     border-radius: 50px;
     padding: 10px;
-    width: 100%; /* Ensures server box fills its container */
+    width: 100%;
     max-width: 500px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -193,7 +193,7 @@ a {
 .server-image {
     width: 60px;
     height: 60px;
-    border-radius: 50%; /* Circular image */
+    border-radius: 50%;
     object-fit: cover;
     margin-right: 15px;
 }
@@ -207,7 +207,7 @@ a {
 }
 
 .server-name:hover {
-    color: #7289da; /* Discord blurple on hover */
+    color: #7289da;
 }
 
 /* -- RULES -- */
@@ -223,7 +223,7 @@ a {
     padding: 8px 0;
     margin-bottom: 8px;
     position: relative;
-    padding-left: 25px; /* Space for the bullet */
+    padding-left: 25px;
 }
 
 .rule:hover {
@@ -309,7 +309,6 @@ a {
     display: inline-block;
 }
 
-/* Style for the dropdown button */
 .dropbtn {
     background-color: #009688;
     color: white;
@@ -322,14 +321,12 @@ a {
     align-items: center;
 }
 
-/* Arrow for dropdown button */
 .dropbtn::after {
     content: ' ▼';
     font-size: 12px;
     margin-left: 5px;
 }
 
-/* Style for the dropdown content */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -340,7 +337,6 @@ a {
     border-radius: 5px;
 }
 
-/* Style for the links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -348,22 +344,18 @@ a {
     display: block;
 }
 
-/* Hover effect for the dropdown menu links */
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
-/* Show the dropdown content when the dropdown button is hovered */
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Change the background color of the dropdown button when hovered */
 .dropdown:hover .dropbtn {
     background-color: #00796b;
 }
 
-/* Style for the individual items in the dropdown */
 .dropdown-content a:hover {
     background-color: #009688;
     color: white;
@@ -371,7 +363,7 @@ a {
 
 /* -- UNDER CONSTRUCTION CONTAINER -- */
 .under-construction {
-    background: #f2c94c; /* Bright yellow background */
+    background: #f2c94c;
     border-radius: 20px;
     padding: 30px;
     margin: 20px auto;
@@ -390,10 +382,10 @@ a {
 
 .under-construction h3 {
     font-weight: 600;
-    color: #3e3e3e; /* Dark gray */
+    color: #3e3e3e;
     margin-bottom: 10px;
     text-align: center;
-    background-color: #ffb600; /* Bright yellow */
+    background-color: #ffb600;
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
@@ -403,13 +395,13 @@ a {
 
 .under-construction p {
     font-size: 18px;
-    color: #404040; /* Dark gray */
+    color: #404040;
     margin-top: 20px;
 }
 
 .under-construction .construction-icon {
     font-size: 50px;
-    color: #ff6600; /* Orange icon for emphasis */
+    color: #ff6600;
     margin: 20px 0;
 }
 
@@ -425,39 +417,39 @@ a {
 
 /* -- ADS -- */
 .ad {
-    display: block; /* Makes the div a block element */
-    background: #7ddba7; /* Fallback background color */
-    border-radius: 20px; /* Rounded corners for the div */
-    margin: 20px auto; /* Center alignment with spacing */
+    display: block;
+    background: #7ddba7;
+    border-radius: 20px;
+    margin: 20px auto;
     width: 100%;
-    max-width: 1060px; /* Define the maximum width */
-    max-height: 230px; /* Constrain the height */
+    max-width: 1060px;
+    max-height: 230px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 
                 0 1px 3px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    overflow: hidden; /* Ensures corners are clipped */
-    position: relative; /* Needed for the `<a>` positioning */
+    overflow: hidden;
+    position: relative;
     text-align: center;
 }
 
 .ad img {
-    display: block; /* Ensures the image takes up the appropriate space */
-    max-width: 100%; /* Ensures the image scales with the container */
-    max-height: 100%; /* Constrains the image height */
-    width: auto; /* Maintains aspect ratio */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: inherit; /* Matches the div's border radius */
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    border-radius: inherit;
 }
 
 .ad a {
-    display: block; /* Makes the link fill the container */
-    position: absolute; /* Covers the entire div */
+    display: block;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    text-decoration: none; /* Removes link underline */
-    z-index: 10; /* Ensures it’s on top */
+    text-decoration: none;
+    z-index: 10;
 }
 
 .ad:hover {
