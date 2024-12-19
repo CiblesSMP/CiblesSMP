@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<script src="/CiblesSMP/importTemplates.js"></script>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -95,6 +93,48 @@
             </div>
         </section>
     </div>
+
+    <div class="ad" id="adArea">
+
+    </div>
+
+    <script>
+      // Ensure the DOM is fully loaded before executing the script
+      document.addEventListener('DOMContentLoaded', function() {
+        try {
+          // Array of ad objects
+          const ads = [
+            {
+              link: "https://ciblesgd.junipercreates.com/channel/UC4STm5KlYBHfn_bA6bjsYjQ/p/7485001924799",
+              imgSrc: "/CiblesSMP/assets/ads/ad1-cibplush-shameless-plug.png"
+            },
+            {
+              link: "https://canary.discord.com/channels/1266454488265392179/1277804478216540180",
+              imgSrc: "/CiblesSMP/assets/ads/ad2-nhe-recruitment.png"
+            }
+          ];
+
+          // Select a random ad
+          const randomAd = ads[Math.floor(Math.random() * ads.length)];
+
+          // Select the ad area
+          const adArea = document.getElementById("adArea");
+          
+          if (!adArea) {
+            throw new Error("Ad area not found.");
+          }
+
+          // Populate the ad area with the selected ad
+          adArea.innerHTML = `
+            <a href="${randomAd.link}" target="_blank"></a>
+            <img src="${randomAd.imgSrc}" alt="ADVERTISEMENT">`;
+
+          console.log("Ad successfully loaded.");
+        } catch (error) {
+          console.error("Error loading ad:", error);
+        }
+      });
+    </script>
 
     <div class="container" id="rules">
         <div class="header-container">

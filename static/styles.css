@@ -422,3 +422,46 @@ a {
     font-size: 12px;
     cursor: pointer;
 }
+
+/* -- ADS -- */
+.ad {
+    display: block; /* Makes the div a block element */
+    background: #7ddba7; /* Fallback background color */
+    border-radius: 20px; /* Rounded corners for the div */
+    margin: 20px auto; /* Center alignment with spacing */
+    width: 100%;
+    max-width: 1060px; /* Define the maximum width */
+    max-height: 230px; /* Constrain the height */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 
+                0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden; /* Ensures corners are clipped */
+    position: relative; /* Needed for the `<a>` positioning */
+    text-align: center;
+}
+
+.ad img {
+    display: block; /* Ensures the image takes up the appropriate space */
+    max-width: 100%; /* Ensures the image scales with the container */
+    max-height: 100%; /* Constrains the image height */
+    width: auto; /* Maintains aspect ratio */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: inherit; /* Matches the div's border radius */
+}
+
+.ad a {
+    display: block; /* Makes the link fill the container */
+    position: absolute; /* Covers the entire div */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-decoration: none; /* Removes link underline */
+    z-index: 10; /* Ensures it’s on top */
+}
+
+.ad:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 
+                0 2px 6px rgba(0, 0, 0, 0.1);
+}
