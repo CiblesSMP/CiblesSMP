@@ -1,6 +1,7 @@
 /* -- COLOR DESIGN VARIABLES -- */
 :root {
-    --special-text-color: #1ba68a;
+    --special-text-color-dark: #15523b;
+    --special-text-color-light: #39e6a5;
 }
 
 
@@ -98,11 +99,11 @@ pre code {
 }
 
 strong {
-    color: var(--special-text-color);
+    color: var(--special-text-color-dark);
 }
 
 a {
-    color: var(--special-text-color);
+    color: var(--special-text-color-dark);
 }
 
 /* -- SECTION CONTAINERS -- */
@@ -417,18 +418,18 @@ a {
 
 /* -- ADS -- */
 .ad {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background: #7ddba7;
     border-radius: 20px;
     margin: 20px auto;
     width: 100%;
     max-width: 1060px;
-    max-height: 230px;
+    max-height: 250px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 
                 0 1px 3px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     overflow: hidden;
-    position: relative;
     text-align: center;
 }
 
@@ -438,22 +439,34 @@ a {
     max-height: 100%;
     width: auto;
     height: auto;
-    border-radius: inherit;
 }
 
 .ad a {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     text-decoration: none;
-    z-index: 10;
 }
 
 .ad:hover {
     transform: translateY(-8px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 
                 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sponsored-label {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: -5px;
+}
+
+.sponsored-label a {
+    color: var(--special-text-color-light);
+}
+
+.sponsored-label a:hover {
+    text-decoration: underline;
 }
