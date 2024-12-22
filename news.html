@@ -31,9 +31,55 @@
         <a href="/CiblesSMP/news">Community News</a>
     </nav>
 
-    <div class="container under-construction">
-        <h3>Under Construction</h3>
-        <p>This section is currently under construction. Stay tuned for updates!</p>
+    <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search posts...">
+        <button onclick="searchPosts()">Search</button>
+        <button id="clear-button" style="display: none;" onclick="clearSearch()">Clear</button>
+    </div>
+
+    <!-- Example News Post -->
+    <!--
+    <div class="news-container">
+        <div class="news-header">
+            <div class="pin-placeholder">📌</div>
+            <div class="news-post-info">
+                <div class="timestamp">01/01/1991 - 00:00 AM/PM</div>
+                <div class="news-title">Exciting News Update!</div>
+                <div style="display: flex; flex-direction: row; justify-content: left">
+                    <div class="news-topic">Community</div>
+                    <div class="news-nation">All Nations</div>
+                </div>
+            </div>
+            <div class="poster-info">
+                <div class="name">John Doe</div>
+                <div class="username">@johndoe</div>
+            </div>
+        </div>
+        <div class="news-body">
+            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. Nibh at risus netus dictum eleifend potenti. Elit eros praesent volutpat maximus vel curabitur. At semper turpis potenti curae interdum magna sapien tellus. Condimentum euismod natoque eget nullam interdum est primis. Iaculis aenean pulvinar ornare netus primis ex convallis quam. Cursus habitasse fermentum ad semper mi molestie primis? Dignissim pellentesque eleifend urna phasellus himenaeos natoque sit fermentum. Nunc varius leo amet maximus eleifend class convallis.</p>
+        </div>
+    </div>
+    -->
+
+    <div class="news-container" postTopic="Community" postNation="All Nations" postUser="Z" postUsername="zcraftelite">
+        <div class="news-header">
+            <div class="pin-placeholder">📌</div>
+            <div class="news-post-info">
+                <div class="timestamp">12/22/2024 - 05:00 PM</div>
+                <div class="news-title">Launch of Community News!</div>
+                <div style="display: flex; flex-direction: row; justify-content: left">
+                    <div class="news-topic">Community</div>
+                    <div class="news-nation">All Nations</div>
+                </div>
+            </div>
+            <div class="poster-info">
+                <div class="name">Z</div>
+                <div class="username">@zcraftelite</div>
+            </div>
+        </div>
+        <div class="news-body">
+            <p>Hi everybody!<br><br>I am so excited to announce that I have finished making this <span style="background: linear-gradient(to right, darkred, darkorange, #B1B100, darkgreen, darkblue, indigo, darkviolet); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">BEAUTIFUL</span> feature for you guys to enjoy.<br><br>Introducing v1 of the <strong>Community News</strong> feature. Here you can share announcements and content onto the website from your individual announcement feeds onto the official community website!!! This will provide a bit of a cooler way to announce things. And, guess what? You don't even need to know how to code, all you have to do is send the announcement you want to make in the discord channel inside the community server <code>#web-announcements</code> and your announcement will be added to the site! We also pin the latest important announcements to the top!<br><br><strong>Coming soon</strong>: Sorting annoncements by topic, nation, or user.</p>
+        </div>
     </div>
 
     <div class="endofcontent"></div>
@@ -42,6 +88,10 @@
         <p>&copy; 2024 ZcraftElite. All Rights Reserved.</p>
         <p>DISCLAIMERS:<br> As of the time of writing, this website is not [yet] fully endorsed by CiblesGD or any of her subsidiaries. This is a community website for the time being, but this is subject to change depending on Cibles' opinion on it.<br>The advertisements shown on this site do not provide the creator with any revenue and instead are a fun addition to bring some playfulness to the site. Feel free to submit one yourself if its Cibles or SMP related!</p>
     </footer>
+
+    <script src="/CiblesSMP/static/communityAdFunction.js"></script>
+    <script src="/CiblesSMP/static/basicFunctions.js"></script>
+    <script src="/CiblesSMP/static/searchBar.js"></script>
 </body>
 
 </html>

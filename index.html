@@ -444,67 +444,8 @@
         <p>DISCLAIMERS:<br> As of the time of writing, this website is not [yet] fully endorsed by CiblesGD or any of her subsidiaries. This is a community website for the time being, but this is subject to change depending on Cibles' opinion on it.<br>The advertisements shown on this site do not provide the creator with any revenue and instead are a fun addition to bring some playfulness to the site. Feel free to submit one yourself if its Cibles or SMP related!</p>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            try {
-                const ads = [
-                    {
-                        link: "https://ciblesgd.junipercreates.com/channel/UC4STm5KlYBHfn_bA6bjsYjQ/p/7485001924799",
-                        imgSrc: "/CiblesSMP/assets/ads/ad1-cibplush-shameless-plug.png"
-                    },
-                    {
-                        link: "https://discord.com/channels/1266454488265392179/1277804478216540180",
-                        imgSrc: "/CiblesSMP/assets/ads/ad2-nhe-recruitment.png"
-                    },
-                    {
-                        link: "https://discord.com/channels/1266454488265392179/1278060398804865195",
-                        imgSrc: "/CiblesSMP/assets/ads/ad3-crackshack-banners.png"
-                    },
-                    {
-                        link: "https://discord.com/channels/1266454488265392179/1278060398804865195",
-                        imgSrc: "/CiblesSMP/assets/ads/ad4-crackshack-hiring.png"
-                    },
-                    {
-                        link: "https://discord.com/channels/1266454488265392179/1277804478216540180",
-                        imgSrc: "/CiblesSMP/assets/ads/ad5-inkadia-recruitment.png"
-                    },
-                    {
-                        link: "https://discord.com/channels/1266454488265392179/1277804478216540180",
-                        imgSrc: "/CiblesSMP/assets/ads/ad6-sirenisia-recruitment.png"
-                    }
-                ];
-
-                // Shuffle the ads for randomness
-                const shuffledAds = ads.sort(() => 0.5 - Math.random());
-
-                // Get all ad areas
-                const adAreas = document.querySelectorAll(".adArea");
-
-                if (adAreas.length === 0) {
-                    throw new Error("No ad areas found.");
-                }
-
-                // Assign ads to ad areas
-                adAreas.forEach((adArea, index) => {
-                    if (index < shuffledAds.length) {
-                        const ad = shuffledAds[index];
-                        adArea.innerHTML = `
-                            <div class="sponsored-label">Community AD - <a href="https://canary.discord.com/channels/1266454488265392179/1266456362460774441/1319016075127423087">Learn More</a></div>
-                            <a href="${ad.link}" target="_blank">
-                                <img src="${ad.imgSrc}" alt="ADVERTISEMENT">
-                            </a>`;
-                    } else {
-                        adArea.innerHTML = "<p>No ads available.</p>";
-                    }
-                });
-
-                console.log("Ads successfully loaded.");
-            } catch (error) {
-                console.error("Error loading ads:", error);
-            }
-        });
-    </script>
-
+    <script src="/CiblesSMP/static/communityAdFunction.js"></script>
+    <script src="/CiblesSMP/static/basicFunctions.js"></script>
 </body>
 
 </html>
