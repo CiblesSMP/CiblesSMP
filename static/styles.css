@@ -78,6 +78,10 @@ footer {
     .container {
         padding: 15px;
     }
+
+    .pin-placeholder {
+        display: none;
+    }
 }
 
 code {

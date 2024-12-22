@@ -7,11 +7,10 @@ function searchPosts() {
     
     posts.forEach(post => {
         const title = post.querySelector('.news-title').textContent.toLowerCase();
-        const body = post.querySelector('.news-body').textContent.toLowerCase();
         const topic = post.querySelector('.news-topic').textContent.toLowerCase();
         const nation = post.querySelector('.news-nation').textContent.toLowerCase();
         
-        if (title.includes(searchTerm) || body.includes(searchTerm) || topic.includes(searchTerm) || nation.includes(searchTerm)) {
+        if (title.includes(searchTerm) || topic.includes(searchTerm) || nation.includes(searchTerm)) {
             post.style.display = 'block';
         } else {
             post.style.display = 'none';
