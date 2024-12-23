@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             link: "https://discord.com/channels/1266454488265392179/1277804478216540180",
             imgSrc: "/CiblesSMP/assets/ads/ad6-sirenisia-recruitment.png"
+        },
+        {
+            link: "https://discord.com/channels/1266454488265392179/1278775530006511647",
+            imgSrc: "/CiblesSMP/assets/ads/ad7-nimbus-recruitment.png"
         }
     ];
 
