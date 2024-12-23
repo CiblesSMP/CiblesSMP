@@ -549,8 +549,7 @@ pre code {
     padding: 20px;
     margin: 20px auto;
     max-width: 1000px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 
-                0 1px 3px rgba(0, 0, 0, 0.05);
+    border: solid 3px black;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -560,8 +559,6 @@ pre code {
 
 .news-container:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 
-                0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .news-header {
@@ -667,16 +664,18 @@ pre code {
 }
 
 /* -- SEARCH BAR -- */
+
 .search-bar {
     display: flex;
     justify-content: center;
     padding: 10px;
+    margin-top: 10px;
 }
 
 .search-bar input[type="text"] {
     width: 300px;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid #64e369;
     border-radius: 20px 0 0 20px;
     outline: none;
     font-size: 16px;
@@ -684,7 +683,7 @@ pre code {
 
 .search-bar button {
     padding: 10px 20px;
-    border: 1px solid #ccc;
+    border: 3px solid #64e369;
     border-left: none;
     background-color: #4CAF50;
     color: white;
@@ -700,6 +699,47 @@ pre code {
 
 .search-bar button#clear-button {
     border-radius: 20px;
-    margin-left: 5px; /* To avoid double border */
-    display: none; /* Initially hidden */
+    margin-left: 5px;
+    border: solid 3px #64e369;
+    display: none;
+}
+
+/* -- COOKIE POPUP -- */
+
+.cookie-popup {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.cookie-popup .cookie-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-popup p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.cookie-popup button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+.cookie-popup button:hover {
+    background-color: #45a049;
 }
