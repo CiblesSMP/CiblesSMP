@@ -141,6 +141,10 @@ pre code {
     border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent; /* Arrow color */
 }
 
+.tooltip-text strong {
+    color: var(--special-text-color-light) !important;
+}
+
 .hover-element:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
@@ -299,6 +303,17 @@ pre code {
     align-items: center; /* Center-align content vertically */
     margin-bottom: 0px; /* Optional spacing between items */
     flex-wrap: wrap;
+}
+
+.nation-toggle {
+    background: white;
+    border: 2px solid white; /* Slightly thicker white border */
+    border-radius: 5px; /* Rounded corners */
+    color: var(--special-text-color-dark);
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /* -- DISCORD SERVERS -- */

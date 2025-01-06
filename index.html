@@ -297,7 +297,12 @@
             <h2>The Community's Official Empires/Nations</h2>
         </div>
         <br><span class="last-updated">Last updated: 12/17/2024 | Z</span><br>
-        <h3>Official Nations</h3>
+        <h3>
+            <span class="hover-element">
+                <span>Official Nations</span>
+                <span class="tooltip-text">Rewards are given for: Most Members, Yearly Nation Ranks, Yearly Holiday Participation, and Yearly Polls<br><br><strong>NOTE</strong>: Empire leaders take priority over nation leaders, talk to empire leaders if you cannot get ahold of nation leaders.</span>
+            </span>
+        </h3>
         <p>Rewards are given for: Most Members, Yearly Nation Ranks, Yearly Holiday Participation, and Yearly Polls<br>NOTE: Empire leaders take priority over nation leaders, talk to empire leaders if you cannot get ahold of nation leaders.</p>
         <ul class="nation-list">
             <li>
@@ -422,8 +427,12 @@
                 </div>
             </li>
         </ul>
-        <h3>Empires</h3>
-        <p>Rewards are given for: Most Members, Yearly Empire Ranks, and Yearly Polls</p>
+        <h3>
+            <span class="hover-element">
+                <span>Empires</span>
+                <span class="tooltip-text">Rewards are given for: Most Members, Yearly Empire Ranks, and Yearly Polls</span>
+            </span>
+        </h3>
         <ul class="nation-list">
             <li>
                 <div class="nation-title">
@@ -460,6 +469,65 @@
                 </div>
             </li>
         </ul>
+        <h3>
+            <span class="hover-element">
+                <span>Unofficial Nations</span>
+                <span class="tooltip-text">Rewards are given for: Most Members, Yearly Unofficial Nation Ranks, Yearly Holiday Participation, and Yearly Polls</span>
+            </span>
+        </h3>
+        <p></p>
+        <button id="toggle-button" class="nation-toggle">Show Nations</button><br><br>
+        <ul class="nation-list" id="unofficial-nations" style="display: none;">
+            <li>
+                <div class="nation-title">
+                    <span class="award-count">3</span>
+                    Aetherland (LEADER:&nbsp;<a href="https://discord.com/users/706249628831580300">Prof</a>)
+                </div>
+                <div>
+                    <span class="badge">🏅 <strong>2024</strong> <strong style="color: deeppink;">UNOFFICIAL PARTICIPANT</strong></span>
+                    <span class="badge">🏅 <strong>2024</strong> Most Hopeful Development</span>
+                    <span class="badge">🏅 <strong>2024</strong> Most Likely to Become Official</span>
+                </div>
+            </li>
+            <li>
+                <div class="nation-title">
+                    <span class="award-count">1</span>
+                    Machine Cult (LEADER:&nbsp;<a href="https://discord.com/users/746299305153003620">Magician</a>)
+                </div>
+                <div>
+                    <span class="badge">🏅 <strong>2024</strong> <strong style="color: deeppink;">UNOFFICIAL PARTICIPANT</strong></span>
+                </div>
+            </li>
+            <li>
+                <div class="nation-title">
+                    <span class="award-count">1</span>
+                    [UNNAMED] (Sythie's Nation)
+                    <span class="abandoned">ABANDONED</span>
+                </div>
+                <div>
+                    <span class="badge">🏅 <strong>2024</strong> <strong style="color: deeppink;">UNOFFICIAL PARTICIPANT</strong></span>
+                </div>
+            </li>
+            <li>
+                <div class="nation-title">
+                    <span class="award-count">1</span>
+                    Retirement Island (LEADER:&nbsp;<a href="https://discord.com/users/525833868234981396">Hailey</a>)
+                </div>
+                <div>
+                    <span class="badge">🏅 <strong>2024</strong> <strong style="color: deeppink;">UNOFFICIAL PARTICIPANT</strong></span>
+                </div>
+            </li>
+            <li>
+                <div class="nation-title">
+                    <span class="award-count">1</span>
+                    Border Kingdom
+                    <span class="abandoned">ABANDONED (UNREACHABLE)</span>
+                </div>
+                <div>
+                    <span class="badge">🏅 <strong>2024</strong> <strong style="color: deeppink;">UNOFFICIAL PARTICIPANT</strong></span>
+                </div>
+            </li>
+        </ul>
         <h3 id="how-to-make-your-own-official-nation-empire">How to make your own official Nation/Empire</h3>
         <p><strong>REQUIREMENTS</strong></p>
         <ul>
@@ -483,6 +551,8 @@
 
         <p>To be a duel citizen you must have affiliations in both countries. Either you have a home in both that you actively use or you have certain things in one country but you have others in another. Both of the countries you wish to have citizenship have to be allied. In the event that allied countries you live in go to war, you may choose a side. It is entirely up to the nations if you are allowed back, or allowed to side with them.</p>
     </div>
+
+    <div class="ad adArea"></div>
 
     <div class="container" id="war-guidelines">
         <div class="header-container">
@@ -579,6 +649,14 @@
 
     <script src="/CiblesSMP/static/communityAdFunction.js"></script>
     <script src="/CiblesSMP/static/basicFunctions.js"></script>
+    <script>
+        document.getElementById('toggle-button').addEventListener('click', function () {
+            const nationList = document.getElementById('unofficial-nations');
+            const isHidden = nationList.style.display === 'none';
+            nationList.style.display = isHidden ? 'block' : 'none';
+            this.textContent = isHidden ? 'Hide Nations' : 'Show Nations';
+        });
+    </script>
 </body>
 
 </html>
