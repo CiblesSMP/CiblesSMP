@@ -214,6 +214,93 @@ pre code {
     cursor: pointer;
 }
 
+/* -- NATION LIST -- */
+.nation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nation-list li {
+    background: #f8f9fa; /* Light background */
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.nation-list li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.nation-list a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nation-list a:hover {
+    text-decoration: underline;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #ffc107; /* Yellow */
+    color: #212529; /* Dark text */
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid #e0a800;
+    margin: 5px 5px 0 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.award-count {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px; /* Adjust size */
+    height: 24px; /* Keep it equal to width for a perfect circle */
+    background-color: #ffc107; /* Yellow background */
+    color: #212529; /* Dark text color */
+    font-size: 12px; /* Adjust text size */
+    font-weight: bold;
+    border-radius: 50%; /* Makes it a circle */
+    border: 1px solid #e0a800; /* Slight border to match the badge style */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    text-align: center;
+    line-height: 1; /* Ensure text is vertically centered */
+    margin-right: 5px;
+}
+
+.empire {
+    font-style: italic;
+    color: #6c757d; /* Subtle gray */
+    margin-left: 10px;
+}
+
+.abandoned {
+    font-style: italic;
+    color: #F28950;
+    margin-left: 10px;
+}
+
+.nation-list li div {
+    margin-top: 5px;
+}
+
+.nation-title {
+    display: flex;
+    align-items: center; /* Center-align content vertically */
+    margin-bottom: 0px; /* Optional spacing between items */
+    flex-wrap: wrap;
+}
+
 /* -- DISCORD SERVERS -- */
 .server-container {
     display: grid;
