@@ -265,10 +265,11 @@ pre code {
 }
 
 .nation-map {
-    border: solid 3px gray !important;
-    border-radius: 10px !important;
-    width: auto !important;
-    height: 300px !important;
+    border: solid 3px gray;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    max-height: 300px;
     max-width: calc(100% - 10px);
 }
 
