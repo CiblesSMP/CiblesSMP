@@ -119,7 +119,7 @@ pre code {
 .hover-element {
     position: relative;
     display: inline-block;
-    cursor: default;
+    cursor: help;
 }
 
 .tooltip-text {
@@ -262,6 +262,12 @@ pre code {
 
 .map-toggle {
     margin-top: 5px;
+}
+
+.map-toggle-disabled {
+    margin-top: 5px;
+    background: lightgray;
+    cursor: not-allowed;
 }
 
 .nation-map {
