@@ -340,6 +340,10 @@
                     <span class="badge">🏅 <strong>2024</strong> <strong style="color: orangered;">HALLOWEEN</strong></span>
                     <span class="badge">🏅 <strong>2024</strong> <strong style="color: forestgreen;">CHRISTMAS</strong></span>
                 </div>
+                <div>
+                    <button class="map-toggle toggle-button">Show Map</button>
+                    <img class="nation-map" src="/CiblesSMP/Assets/Maps/Cibilia.png" style="display: none;">
+                </div>
             </li>
             <li>
                 <div class="nation-title">
@@ -351,6 +355,10 @@
                     <span class="badge">🏅 <strong>2024</strong> <strong style="color: deeppink;">PARTICIPANT</strong></span>
                     <span class="badge">🏅 <strong>2024</strong> <strong style="color: forestgreen;">CHRISTMAS</strong></span>
                     <span class="badge">🏅 <strong>2024</strong> Best Vacation Spot</span>
+                </div>
+                <div>
+                    <button class="map-toggle toggle-button">Show Map</button>
+                    <img class="nation-map" src="/CiblesSMP/Assets/Maps/Sunnyside.png" style="display: none;">
                 </div>
             </li>
             <li>
@@ -747,6 +755,29 @@
             button.style.display = 'none';
 
             this.textContent = areHidden ? 'Hide Nations' : 'Show Nations';
+        });
+    </script>
+    <script>
+        const toggleButtons = document.querySelectorAll('.map-toggle');
+
+        toggleButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Find the sibling image with the 'nation-map' class
+                const map = button.nextElementSibling;
+
+                if (map && map.classList.contains('nation-map')) {
+                    // Toggle the display of the map
+                    if (map.style.display === 'none' || map.style.display === '') {
+                        map.style.display = 'block';
+                        button.style.marginBottom = '10px';
+                        button.textContent = 'Hide Map';
+                    } else {
+                        map.style.display = 'none';
+                        button.style.marginBottom = '0px';
+                        button.textContent = 'Show Map';
+                    }
+                }
+            });
         });
     </script>
 </body>

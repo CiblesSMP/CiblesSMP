@@ -104,6 +104,17 @@ pre code {
     border: 1px solid #444c56;
 }
 
+.toggle-button {
+    background: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: var(--special-text-color-dark);
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 /* -- HOVER TEXTBOX -- */
 .hover-element {
     position: relative;
@@ -247,6 +258,26 @@ pre code {
 .nation-list li:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.map-toggle {
+    margin-top: 5px;
+}
+
+.nation-map {
+    border: solid 3px gray !important;
+    border-radius: 10px !important;
+    width: auto !important;
+    height: 300px !important;
+    max-width: calc(100% - 10px);
+}
+
+.nation-map-div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
 }
 
 .winning-listitem:hover {
