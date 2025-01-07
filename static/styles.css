@@ -145,6 +145,14 @@ pre code {
     color: var(--special-text-color-light) !important;
 }
 
+.tooltip-text a {
+    color: var(--special-text-color-light) !important;
+}
+
+.tooltip-text u {
+    color: var(--special-text-color-light) !important;
+}
+
 .hover-element:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
@@ -246,12 +254,7 @@ pre code {
     background: lightpink;
 }
 
-.secondplace-listitem:hover {
-    transform: scale(1.02);
-    background: lightblue;
-}
-
-.thirdplace-listitem:hover {
+.honorable-mention-listitem:hover {
     transform: scale(1.02);
     background: lightsalmon;
 }
@@ -317,10 +320,29 @@ pre code {
     margin-right: 5px;
 }
 
-.empire {
+.empire-label {
     font-style: italic;
-    color: #6c757d; /* Subtle gray */
+    color: #6c757d;
     margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.empire-label a {
+    font-style: italic;
+    color: #6c757d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.empire-label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.empire-label a:hover {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .abandoned {
