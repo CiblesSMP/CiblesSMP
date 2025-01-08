@@ -759,6 +759,12 @@ pre code {
     transform: translateY(-8px);
 }
 
+.news-container h2 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #455a64;
+}
+
 .news-header {
     display: flex;
     flex-direction: row;
@@ -865,6 +871,7 @@ pre code {
 
 .search-bar {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10px;
     margin-top: 10px;
@@ -897,9 +904,26 @@ pre code {
 
 .search-bar button#clear-button {
     border-radius: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
     border: solid 3px #64e369;
     display: none;
+}
+
+.search-bar select {
+    padding: 10px;
+    border: 3px solid #64e369;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+    width: 175px;
+}
+
+.search-bar select:hover {
+    background-color: #e8f5e9;
 }
 
 /* -- COOKIE POPUP -- */

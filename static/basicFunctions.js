@@ -60,3 +60,8 @@ document.addEventListener('DOMContentLoaded', () => {
         setCookie('cookiesAccepted', 'true');
     });
 });
+
+// -- SLEEP FUNCTION --
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}

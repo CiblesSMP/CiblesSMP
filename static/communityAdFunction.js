@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    sleep(500);
     // List of current ads and the links to their image and redirect link
     const ads = [
         {

@@ -33,8 +33,17 @@
 
     <div class="search-bar">
         <input type="text" id="search-input" placeholder="Search posts...">
-        <button onclick="searchPosts()">Search</button>
-        <button id="clear-button" style="display: none;" onclick="clearSearch()">Clear</button>
+        <button id="search-button">Search</button>
+        <select id="user-dropdown">
+            <option value="All Users">All Users</option>
+        </select>
+        <select id="topic-dropdown">
+            <option value="All Topics">All Topics</option>
+        </select>
+        <select id="nation-dropdown">
+            <option value="All Nations">All Nations</option>
+        </select>
+        <button id="clear-button" onclick="clearSearch()">Clear</button>
     </div>
 
     <!-- Example News Post -->
@@ -61,9 +70,71 @@
     </div>
     -->
 
-    <div class="news-container" postTopic="Community" postNation="All Nations" postUser="Z" postUsername="zcraftelite">
+    <div id="no-posts-message" style="display: none; color: gray; text-align: center;">No posts found</div>
+
+    <div class="news-container" postTopic="New Website Feature" postNation="All Nations" postUser="Z" postUsername="zcraftelite">
         <div class="news-header">
             <div class="pin-placeholder">📌</div>
+            <div class="news-post-info">
+                <div class="timestamp">01/08/2025 - 09:00 AM</div>
+                <div class="news-title">Maps Galore!!!</div>
+                <div style="display: flex; flex-direction: row; justify-content: left">
+                    <div class="news-topic">New Website Feature</div>
+                    <div class="news-nation">All Nations</div>
+                </div>
+            </div>
+            <div class="poster-info">
+                <div class="name">Z</div>
+                <div class="username">@zcraftelite</div>
+            </div>
+        </div>
+        <div class="news-body">
+            <p>Heyo everyone!<br><br>I am <span style="background: linear-gradient(to right, lightpink, hotpink, lightpink, hotpink); -webkit-background-clip: text;-webkit-text-fill-color: transparent;">so excited</span> to announce I have added a feature to now include maps of the Nations & Territories of the server!!<br><br>This is mostly because the #maps channel in the community discord server sat unused and mostly dormant with old outdated maps, so I decided to take it upon my self and manually draw out everybody's borders and put the maps on the site! I tried to do this for as many of the Nations and Territories as I could, and I will still add more later, as well as periodically update the maps once boundries are changed or lots of new buildings are built.</p>
+        </div>
+    </div>
+
+    <div class="news-container" postTopic="New Website Feature" postNation="All Nations" postUser="Z" postUsername="zcraftelite">
+        <div class="news-header">
+            <div class="news-post-info">
+                <div class="timestamp">01/07/2025 - 02:37 PM</div>
+                <div class="news-title">Defining Terms</div>
+                <div style="display: flex; flex-direction: row; justify-content: left">
+                    <div class="news-topic">New Website Feature</div>
+                    <div class="news-nation">All Nations</div>
+                </div>
+            </div>
+            <div class="poster-info">
+                <div class="name">Z</div>
+                <div class="username">@zcraftelite</div>
+            </div>
+        </div>
+        <div class="news-body">
+            <p>Heyo everyone. I realized today while working on the website that we haven't yet (at least in discord) defined exactly what the different types of entities on the server actually are.<br><br>So I took the liberty to clarify the different types on the website, and since you guys might not always check the website, I decided to clarify in an announcement as well.<br><br><h2>Nation</h2>A <strong>nation</strong> is a area of land in which a small-large community of people are settled. It usually has a independent government unless it's a part of an empire.<br><br><strong style="font-size: calc(len + 3px)">Official Nations</strong> are nations that have met the <u>requirements for official recognition</u> and have signed up to be officially recognized. The leaders of these nations are included on the World Leaders team, which makes many decisions about the community.<br><br><strong style="font-size: calc(len + 3px)">Unofficial Nations</strong> are nations that are on the server but are either not yet meeting official registration requirements or do not wish to officially register. These are shown here to still promote them, but will not be included in the World Leaders team or decisions made by the team.<br><br><h2>Empire</h2><strong>Empires</strong> are alliances/groups of nations banded together. Usually empires have some kind of overall government and rule over many pieces of land. These can be established when at least one <strong>registered nation</strong> comes together with another nation or territory to form a central government.<br><br><h2>Territory</h2><strong>Territories</strong> are areas of land that contain player-built structures or player-crafted natural landmarks that don't identify as a nation. These can include anything player-built and by default will be named "[player name]'s Territory".</p>
+        </div>
+    </div>
+
+    <div class="news-container" postTopic="Community" postNation="All Nations" postUser="Z" postUsername="zcraftelite">
+        <div class="news-header">
+            <div class="news-post-info">
+                <div class="timestamp">01/04/2025 - 09:09 PM</div>
+                <div class="news-title">Griefing and Altering Terrain</div>
+                <div style="display: flex; flex-direction: row; justify-content: left">
+                    <div class="news-topic">Community</div>
+                    <div class="news-nation">All Nations</div>
+                </div>
+            </div>
+            <div class="poster-info">
+                <div class="name">Redy</div>
+                <div class="username">@redy2794</div>
+            </div>
+        </div>
+        <div class="news-body">
+            <p>Hello everyone! Today was fun and I enjoyed my wedding, thank you to all who came. Unfortunately, there were 2 fires today that I have to address instead of enjoying this happy day. Both of the fires were located in the new nation Dark Wood. 2 homes were effected as well as some trees. I've spoken to Zena and we both agree that there is no way that it could have occurred naturally as nothing appeared in the mod log. However, due to nothing appearing in the mod log about said fire we don't know who did it.<br><br>Griefing is usually not an issue so I don't want anyone to feel alarmed. Although I would really like to believe no one did would do things like this, we've had 3 fires in the nation since yesterday that have effected homes.  Please be on the lookout for suspicious activity and have water buckets on hand for the next couple weeks or until we can ensure the person who has done these horrible actions is prosecuted or banned.<br><br><strong>This is a final message to everyone on the server that griefing player made and/or owned terrain and builds is strictly prohibited.</strong> I'm fully aware that many of you abide by the laws of all the countries and general human decency. Which is why I'm sorry to all that enjoy our wonderful server in an appropriate manner. If you have been effected by any player griefing recently please send me or my partner Zena screenshots and The Crack Shack Company will ensure you get either a new home or resources to fix the damage.</p>
+        </div>
+    </div>
+
+    <div class="news-container" postTopic="Community" postNation="All Nations" postUser="Z" postUsername="zcraftelite">
+        <div class="news-header">
             <div class="news-post-info">
                 <div class="timestamp">12/22/2024 - 05:00 PM</div>
                 <div class="news-title">Launch of Community News!</div>
@@ -82,8 +153,6 @@
         </div>
     </div>
 
-    <div class="ad adArea"></div>
-
     <div class="endofcontent"></div>
 
     <footer>
@@ -91,8 +160,9 @@
         <p>DISCLAIMERS:<br> As of the time of writing, this website is not [yet] fully endorsed by CiblesGD or any of her subsidiaries. This is a community website for the time being, but this is subject to change depending on Cibles' opinion on it.<br>The advertisements shown on this site do not provide the creator with any revenue and instead are a fun addition to bring some playfulness to the site. Feel free to submit one yourself if its Cibles or SMP related!</p>
     </footer>
 
-    <script src="/CiblesSMP/static/communityAdFunction.js"></script>
     <script src="/CiblesSMP/static/basicFunctions.js"></script>
+    <script src="/CiblesSMP/static/autoAdFunction.js"></script>
+    <script src="/CiblesSMP/static/communityAdFunction.js"></script>
     <script src="/CiblesSMP/static/searchBar.js"></script>
     <script src="/CiblesSMP/static/mobile.js"></script>
 </body>
