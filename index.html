@@ -342,7 +342,8 @@
                 </div>
                 <div>
                     <button class="map-toggle toggle-button">Show Map</button>
-                    <button class="coordinate-toggle toggle-button" coordinates="X: ~630, Z: ~2974">See Coordinates</button>
+                    <button class="coordinate-toggle toggle-button" coordinates="X: ~706, Z: ~3013">See Coordinates</button>
+                    <button class="bluemap-toggle toggle-button" x="706" z="3013" zoom="400">Open in Bluemap</button>
                     <img class="nation-map" src="assets/Maps/Abyssnia.png" style="display: none;">
                 </div>
             </li>
@@ -359,6 +360,7 @@
                 <div>
                     <button class="map-toggle toggle-button">Show Map</button>
                     <button class="coordinate-toggle toggle-button" coordinates="X: ~104, Z: ~161">See Coordinates</button>
+                    <button class="bluemap-toggle toggle-button" x="104" z="161" zoom="300">Open in Bluemap</button>
                     <img class="nation-map" src="assets/Maps/Cibilia.png" style="display: none;">
                 </div>
             </li>
@@ -376,6 +378,7 @@
                 <div>
                     <button class="map-toggle toggle-button">Show Map</button>
                     <button class="coordinate-toggle toggle-button" coordinates="X: ~274, Z: ~1524">See Coordinates</button>
+                    <button class="bluemap-toggle toggle-button" x="274" y="0" z="1524" zoom="300">Open in Bluemap</button>
                     <img class="nation-map" src="assets/Maps/Sunnyside.png" style="display: none;">
                 </div>
             </li>
@@ -937,6 +940,26 @@
                 
                 // Change the button text to the coordinates
                 button.textContent = coordinates;
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Add event listeners to all buttons with the class 'bluemap-toggle'
+            document.querySelectorAll(".bluemap-toggle").forEach(button => {
+                button.addEventListener("click", () => {
+                    // Extract coordinates and zoom level from button attributes
+                    const x = button.getAttribute("x") || "0";
+                    const y = button.getAttribute("y") || "0";
+                    const z = button.getAttribute("z") || "0";
+                    const zoom = button.getAttribute("zoom") || "300";
+
+                    // Construct the Bluemap URL
+                    const bluemapUrl = `http://ciblesgd.mc.gg:5299/#world:${x}:${y}:${z}:${zoom}:0:0:0:1:flat`;
+
+                    // Open the URL in a new tab
+                    window.open(bluemapUrl, "_blank");
+                });
             });
         });
     </script>
