@@ -65,3 +65,16 @@ document.addEventListener('DOMContentLoaded', () => {
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+// -- GET NEXT ELEMENT WITH SKIP FUNCTION --
+function getNextSibling(element, skip) {
+    let current = element;
+    for (let i = 0; i < skip; i++) {
+        if (current.nextElementSibling) {
+            current = current.nextElementSibling;
+        } else {
+            return null; // Return null if there aren't enough siblings to skip
+        }
+    }
+    return current;
+}

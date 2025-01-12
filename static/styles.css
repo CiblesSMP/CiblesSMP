@@ -115,6 +115,11 @@ pre code {
     text-decoration: none;
 }
 
+.toggle-button.disabled {
+    background: lightgray;
+    cursor: not-allowed;
+}
+
 /* -- HOVER TEXTBOX -- */
 .hover-element {
     position: relative;
@@ -260,12 +265,7 @@ pre code {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.map-toggle {
-    margin-top: 5px;
-}
-
 .map-toggle-disabled {
-    margin-top: 5px;
     background: lightgray;
     cursor: not-allowed;
 }
