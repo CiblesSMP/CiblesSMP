@@ -329,8 +329,8 @@ pre code {
 
 .badge {
     display: inline-block;
-    background-color: #ffc107; /* Yellow */
-    color: #212529; /* Dark text */
+    background-color: #ffc107;
+    color: #212529;
     font-size: 12px;
     padding: 5px 10px;
     border-radius: 15px;
@@ -357,6 +357,21 @@ pre code {
     line-height: 1; /* Ensure text is vertically centered */
     margin-right: 5px;
 }
+
+.dispute-warning {
+    margin-left: 10px;
+    display: inline-block;
+    background-color: #D42828;
+    color: #E6ACAC;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: none;
+    marging: 5px 5px 0 0;
+    white-space: nowrap;
+    text-align: center;
+}
+.dispute-warning::before {content: "⚠️";}
 
 .empire-label {
     font-style: italic;

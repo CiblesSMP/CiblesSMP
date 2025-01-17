@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <script type="module" src="static/firebaseConfig.js"></script>
     <header>
         <h1>Cibles SMP</h1>
     </header>
@@ -36,32 +37,16 @@
         <p id="view-counter" style="font-size: 2em; margin: 10px 0; font-weight: bold; letter-spacing: 1px;">Loading...</p>
 
         <script type="module">
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
-            import { getFirestore, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
-
-            // Firbase Config
-            // Yes, I know, the API key is just sitting there, waiting to be used for evil. However, I have the entire firebase app literally set up so the only thing you can change is the view counter. You can only increment it by one per request. So if you want your IP address blown off the face of the earth by Google Firebase, I dare you to set the view count to 69,000.
-            const firebaseConfig = {
-                apiKey: "AIzaSyDjbTWTDdhfOp6MUBOC5R9hV8_Lj1RNSes",
-                authDomain: "ciblessmp.firebaseapp.com",
-                projectId: "ciblessmp",
-                storageBucket: "ciblessmp.firebasestorage.app",
-                messagingSenderId: "847287753501",
-                appId: "1:847287753501:web:0202db036f9c935a751ff4"
-            };
-
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
-            const db = getFirestore(app);
-            const counterRef = doc(db, "counters", "viewCounter");
+            import { getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+            import { viewCounterDB } from "./static/firebaseConfig.js"
 
             async function incrementViewCount() {
                 try {
-                    const docSnap = await getDoc(counterRef);
+                    const docSnap = await getDoc(viewCounterDB);
                     const data = docSnap.data();
 
                     // Increment the counter by 1
-                    await updateDoc(counterRef, {
+                    await updateDoc(viewCounterDB, {
                         count: data.count + 1
                     });
 
@@ -457,8 +442,8 @@
                     <span class="badge">🏅 <strong>2024</strong> <strong style="color: deeppink;">PARTICIPANT</strong></span>
                 </div>
                 <div>
-                    <button class="map-toggle- toggle-button">Show Map</button>
-                    <button class="coordinate-toggle toggle-button" coordinates="X: ~0, Z: ~0">See Coordinates</button>
+                    <button class="map-toggle toggle-button">Show Map</button>
+                    <button class="coordinate-toggle toggle-button" coordinates="Dimension: The End X: ~0, Z: ~0">See Coordinates</button>
                     <button class="bluemap-toggle toggle-button" dimension="world_the_end" x="-76" z="11" zoom="150">Open in Bluemap</button>
                     <img class="nation-map" src="assets/Maps/Ender Kingdom.png" style="display: none;">
                 </div>
@@ -474,8 +459,9 @@
                     <span class="badge">🏅 <strong>2024</strong> <strong style="color: deeppink;">PARTICIPANT</strong></span>
                 </div>
                 <div>
-                    <button class="map-toggle-disabled toggle-button">No Map Available</button>
-                    <button class="coordinate-toggle toggle-button disabled" coordinates="none">Coordinates Unknown</button>
+                    <span class="hover-element"><button class="map-toggle-disabled toggle-button">No Map Available</button><span class="tooltip-text"><strong style="font-size: 16px;">Why is there no map available?</strong><br><br>Due to Bluemap not being able to see the nether roof, it is not as easy to obtain a map of Nether Roof Nation. This doesn't mean we won't eventually get one, as the preservation of abandoned nations is very important to us.</span></span>
+                    <button class="coordinate-toggle toggle-button" coordinates="Dimesnsion: The Nether X: 566 Z: -15724">See Coordinates</button>
+                    <span class="hover-element"><button class="toggle-button disabled">Open in Bluemap</button><span class="tooltip-text"><strong style="font-size: 16px;">Why is this feature disabled?</strong><br><br>Due to Bluemap not being able to visually observe the nether roof, it is currently impossible to open it in Bluemap. Eventually, we may find a config option to allow Bluemap to support the nether roof, but as of now, we will keep the feature disabled entirely for Nether Roof Nation.</span></span>
                     <img class="nation-map" src="assets/Maps/Nether Roof Nation.png" style="display: none;">
                 </div>
             </li>
@@ -501,6 +487,7 @@
                     <li>Republic of Nimbus</li>
                     <li>Moss Island</li>
                     <li>WaffleDog's Territory</li>
+                    <li>Ithaca</li>
                 </ul>
                 <div>
                     <span class="badge">🏅 Most Members</span>
@@ -596,12 +583,13 @@
                 <div class="nation-title">
                     <span class="award-count">1</span>
                     Machine Cult (LEADER:&nbsp;<a href="https://discord.com/users/746299305153003620">Magician</a>)
+                    <span class="dispute-warning"></span>
                 </div>
                 <div>
                     <span class="badge">🏅 <strong>2024</strong> <strong style="color: deeppink;">UNOFFICIAL PARTICIPANT</strong></span>
                 </div>
                 <div>
-                    <button class="map-toggle-disabled toggle-button">No Map Available</button>
+                    <span class="hover-element"><button class="map-toggle-disabled toggle-button">No Map Available</button><span class="tooltip-text"><strong style="font-size: 16px;">Why is this feature disabled?</strong><br><br>There are two common reasons why land might not have a boundaries map on the site:<br><strong>1.</strong> We haven't yet gotten around to tracing the map yet, we'll do so as soon as possible.<br><strong>2.</strong> We don't know exactly where this land area is located, and the coordinates are unknown.<br><strong>3.</strong>The land that the owner/leader of the area claims is <strong>under dispute</strong>.</span></span>
                     <button class="toggle-button disabled" coordinates="none">Coordinates Unavailable</button>
                     <img class="nation-map" src="assets/Maps/Machine Cult.png" style="display: none;">
                 </div>
@@ -619,6 +607,19 @@
                     <button class="coordinate-toggle toggle-button" coordinates="X: ~2062, Z: ~2515">See Coordinates</button>
                     <button class="bluemap-toggle toggle-button" x="2062" z="2515" zoom="100">Open in Bluemap</button>
                     <img class="nation-map" src="assets/Maps/Retirement Island.png" style="display: none;">
+                </div>
+            </li>
+            <li class="hidden-2" style="display: none;">
+                <div class="nation-title">
+                    <span class="award-count">0</span>
+                    Ithaca (LEADER:&nbsp;<a href="https://discord.com/users/1289604181153419400">Odysseus</a>)
+                    <span class="empire-label">Abyss Empire</span>
+                </div>
+                <div>
+                    <button class="map-toggle toggle-button">Show Map</button>
+                    <button class="coordinate-toggle toggle-button" coordinates="X: ~2332, Z: ~70">See Coordinates</button>
+                    <button class="bluemap-toggle toggle-button" x="2332" z="70" zoom="200">Open in Bluemap</button>
+                    <img class="nation-map" src="assets/Maps/Ithaca.png" style="display: none;">
                 </div>
             </li>
             <li class="hidden-2" style="display: none;">
@@ -731,7 +732,7 @@
                     <span class="empire-label"><a href="#empire-ae">Abyss Empire</a></span>
                 </div>
                 <div>
-                    <button class="toggle-button disabled">No Map Available</button>
+                    <button class="map-toggle-disabled toggle-button">No Map Available</button>
                     <button class="coordinate-toggle toggle-button" coordinates="X: ~720, Z: ~2587">See Coordinates</button>
                     <button class="bluemap-toggle toggle-button" x="712" z="2590" zoom="100">Open in Bluemap</button>
                     <img class="nation-map" src="assets/Maps/Old Abyssnian Castle.png" style="display: none;">
@@ -917,7 +918,7 @@
         <span><strong>IP</strong>: ciblesgd.mc.gg</span><br>
         <span><strong>Minecraft Port</strong>: 19132</span><br>
         <span><strong>Version</strong>: Paper 1.21.3 (Java 1.21.3)</span><br>
-        <span><strong>Compatible Clients</strong>: Java 1.21.3, <del>Bedrock 1.21.30-1.21.40</del> (Bedrock Support is currently unavailable)</span>
+        <span><strong>Compatible Clients</strong>: Java 1.21.3, Bedrock 1.21.40+</span>
     </div>
 
     <div class="ad adArea"></div>
@@ -929,7 +930,7 @@
         <p>DISCLAIMERS:<br> As of the time of writing, this website is not [yet] fully endorsed by CiblesGD or any of her subsidiaries. This is a community website for the time being, but this is subject to change depending on Cibles' opinion on it.<br>The advertisements shown on this site do not provide the creator with any revenue and instead are a fun addition to bring some playfulness to the site. Feel free to submit one yourself if its Cibles or SMP related!</p>
     </footer>
 
-    <script src="/CiblesSMP/static/communityAdFunction.js"></script>
+    <script type="module" src="/CiblesSMP/static/communityAdFunction.js"></script>
     <script src="/CiblesSMP/static/basicFunctions.js"></script>
     <script>
         document.getElementById('hidden-1-toggle').addEventListener('click', function () {
@@ -1007,34 +1008,85 @@
         });
     </script>
     <script>
+        (function() {
+            const mapToggleTooltipContent = `
+                <span class="tooltip-text">
+                    <strong style="font-size: 16px;">Why is this feature disabled?</strong><br><br>
+                    There are two common reasons why land might not have a boundaries map on the site:<br>
+                    <strong>1.</strong> We haven't yet gotten around to tracing the map yet, we'll do so as soon as possible.<br>
+                    <strong>2.</strong> We don't know exactly where this land area is located, and the coordinates are unknown.<br>
+                    <strong>3.</strong> The land that the owner/leader of the area claims is <strong>under dispute</strong>.
+                </span>`;
+
+            const disputeWarningTooltipContent = `
+                <span class="tooltip-text">
+                    <strong style="font-size: 16px;">⚠️ Land under dispute ⚠️</strong><br><br>
+                    When land is marked as 'Under Dispute', it means that the owner/leader of that piece of land has been reached out to by server staff about their land claims. Land claims are usually marked as under dispute by server staff when the land they claim to own isn't being used enough for it to be fair to other server members for the owner/leader to take that land.<br><br>
+                    As of this time, there are no official land usage requirements, however, these will be clarified in the future to ensure fairness for all players. This means if you are reached out to by a staff member, you likely [no offense], drew lines on a map and said it is yours.
+                </span>`;
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const mapToggleButtons = document.querySelectorAll('button.map-toggle-disabled.toggle-button');
+
+                mapToggleButtons.forEach(button => {
+                    const parentSpan = button.closest('.hover-element');
+
+                    if (parentSpan && parentSpan.querySelector('.tooltip-text')) {
+                        return;
+                    }
+
+                    const hoverElement = document.createElement('span');
+                    hoverElement.classList.add('hover-element');
+
+                    button.parentNode.insertBefore(hoverElement, button);
+                    hoverElement.appendChild(button);
+
+                    hoverElement.innerHTML += mapToggleTooltipContent;
+                });
+
+                const disputeWarnings = document.querySelectorAll('span.dispute-warning');
+
+                disputeWarnings.forEach(warning => {
+                    const parentSpan = warning.closest('.hover-element');
+
+                    if (parentSpan && parentSpan.querySelector('.tooltip-text')) {
+                        return;
+                    }
+
+                    const hoverElement = document.createElement('span');
+                    hoverElement.classList.add('hover-element');
+
+                    warning.parentNode.insertBefore(hoverElement, warning);
+                    hoverElement.appendChild(warning);
+
+                    hoverElement.innerHTML += disputeWarningTooltipContent;
+                });
+            });
+        })();
+    </script>
+    <script>
         const coordinateToggleButtons = document.querySelectorAll('.coordinate-toggle');
 
         coordinateToggleButtons.forEach(button => {
             button.addEventListener('click', () => {
-                // Get the coordinates from the "coordinates" attribute
                 const coordinates = button.getAttribute('coordinates');
                 
-                // Change the button text to the coordinates
                 button.textContent = coordinates;
             });
         });
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            // Add event listeners to all buttons with the class 'bluemap-toggle'
             document.querySelectorAll(".bluemap-toggle").forEach(button => {
                 button.addEventListener("click", () => {
-                    // Extract coordinates and zoom level from button attributes
                     const x = button.getAttribute("x") || "0";
                     const y = button.getAttribute("y") || "0";
                     const z = button.getAttribute("z") || "0";
                     const zoom = button.getAttribute("zoom") || "300";
                     const dimension = button.getAttribute("dimension") || "world";
 
-                    // Construct the Bluemap URL
                     const bluemapUrl = `http://ciblesgd.mc.gg:5299/#${dimension}:${x}:${y}:${z}:${zoom}:0:0:0:1:flat`;
 
-                    // Open the URL in a new tab
                     window.open(bluemapUrl, "_blank");
                 });
             });

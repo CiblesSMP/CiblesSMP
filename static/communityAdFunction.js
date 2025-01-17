@@ -1,32 +1,67 @@
+import { getDoc, updateDoc, setDoc, doc } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
+import { adViewsDB } from "/static/firebaseConfig.js";
+
+async function incrementAdViewCount(ad) {
+    try {
+        const docSnap = await getDoc(adViewsDB);
+        const data = docSnap.data();
+
+        // Check if the ad view count exists, if not, create it with initial value of 0
+        if (!data || !data[ad]) {
+            // Initialize the ad view count if it doesn't exist
+            await updateDoc(adViewsDB, { [ad]: 1 }, { merge: true });
+            console.log(`Created a new ad view count for ${ad}.`);
+        }
+
+        // Increment the counter by 1
+        if (data && data[ad]) {
+            await updateDoc(adViewsDB, {
+                [ad]: data[ad] + 1
+            })
+        };
+        console.log(`Incremented view count for ${ad}.`);
+
+    } catch (error) {
+        console.error("Error updating ad analytics data: ", error);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     sleep(500);
     // List of current ads and the links to their image and redirect link
     const ads = [
         {
+            name: "ad1-cibplush-shameless-plug",
             link: "https://ciblesgd.junipercreates.com/channel/UC4STm5KlYBHfn_bA6bjsYjQ/p/7485001924799",
             imgSrc: "/CiblesSMP/assets/ads/ad1-cibplush-shameless-plug.png"
         },
         {
+            name: "ad2-nhe-recruitment",
             link: "https://discord.com/channels/1266454488265392179/1277804478216540180",
             imgSrc: "/CiblesSMP/assets/ads/ad2-nhe-recruitment.png"
         },
         {
+            name: "ad3-crackshack-banners",
             link: "https://discord.com/channels/1266454488265392179/1278060398804865195",
             imgSrc: "/CiblesSMP/assets/ads/ad3-crackshack-banners.png"
         },
         {
+            name: "ad4-crackshack-hiring",
             link: "https://discord.com/channels/1266454488265392179/1278060398804865195",
             imgSrc: "/CiblesSMP/assets/ads/ad4-crackshack-hiring.png"
         },
         {
+            name: "ad5-inkadia-recruitment",
             link: "https://discord.com/channels/1266454488265392179/1277804478216540180",
             imgSrc: "/CiblesSMP/assets/ads/ad5-inkadia-recruitment.png"
         },
         {
+            name: "ad6-sirenisia-recruitment",
             link: "https://discord.com/channels/1266454488265392179/1277804478216540180",
             imgSrc: "/CiblesSMP/assets/ads/ad6-sirenisia-recruitment.png"
         },
         {
+            name: "ad7-nimbus-recruitment",
             link: "https://discord.com/channels/1266454488265392179/1278775530006511647",
             imgSrc: "/CiblesSMP/assets/ads/ad7-nimbus-recruitment.png"
         }
@@ -50,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         adAreas.forEach((adArea, index) => {
             if (index < shuffledAds.length) {
                 const ad = shuffledAds[index];
+                incrementAdViewCount(ad.name);
                 adArea.innerHTML = `
                     <div class="sponsored-label">
                         Community Ad
