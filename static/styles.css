@@ -304,6 +304,7 @@ pre code {
     margin-left: -10px;
     gap: 5px;
     align-content: flex-start;
+    justify-content: flex-start;
 }
 
 .empire-nations li {
@@ -315,6 +316,7 @@ pre code {
     text-align: center;
     font-style: italic;
     color: #6c757d;
+    margin: 0;
 }
 
 .nation-list a {
@@ -351,7 +353,7 @@ pre code {
     font-size: 12px; /* Adjust text size */
     font-weight: bold;
     border-radius: 50%; /* Makes it a circle */
-    border: 1px solid #e0a800; /* Slight border to match the badge style */
+    border: 1px solid #000000; /* Slight border to match the badge style */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
     text-align: center;
     line-height: 1; /* Ensure text is vertically centered */
@@ -372,6 +374,82 @@ pre code {
     text-align: center;
 }
 .dispute-warning::before {content: "⚠️";}
+
+.official-badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px; /* Adjust size */
+    height: 24px; /* Keep it equal to width for a perfect circle */
+    background-color: #199216; /* Yellow background */
+    color: #FFFFFF; /* Dark text color */
+    font-size: 12px; /* Adjust text size */
+    font-weight: bold;
+    border-radius: 15px; /* Makes it a circle */
+    border: 1px solid #000000; /* Slight border to match the badge style */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    text-align: center;
+    line-height: 1; /* Ensure text is vertically centered */
+    margin-right: 5px;
+}
+.official-badge::before {content: "Official";}
+
+.unofficial-badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px; /* Adjust size */
+    height: 24px; /* Keep it equal to width for a perfect circle */
+    background-color: #921616; /* Yellow background */
+    color: #FFFFFF; /* Dark text color */
+    font-size: 12px; /* Adjust text size */
+    font-weight: bold;
+    border-radius: 15px; /* Makes it a circle */
+    border: 1px solid #000000; /* Slight border to match the badge style */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    text-align: center;
+    line-height: 1; /* Ensure text is vertically centered */
+    margin-right: 5px;
+}
+.unofficial-badge::before {content: "Unofficial";}
+
+.personal-badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px; /* Adjust size */
+    height: 24px; /* Keep it equal to width for a perfect circle */
+    background-color: #162292; /* Yellow background */
+    color: #FFFFFF; /* Dark text color */
+    font-size: 12px; /* Adjust text size */
+    font-weight: bold;
+    border-radius: 15px; /* Makes it a circle */
+    border: 1px solid #000000; /* Slight border to match the badge style */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    text-align: center;
+    line-height: 1; /* Ensure text is vertically centered */
+    margin-right: 5px;
+}
+.personal-badge::before {content: "Personal";}
+
+.member-count-badge {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px; /* Adjust size */
+    height: 24px; /* Keep it equal to width for a perfect circle */
+    background-color: #16928B; /* Yellow background */
+    color: #FFFFFF; /* Dark text color */
+    font-size: 12px; /* Adjust text size */
+    font-weight: bold;
+    border-radius: 15px; /* Makes it a circle */
+    border: 1px solid #000000; /* Slight border to match the badge style */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    text-align: center;
+    line-height: 1; /* Ensure text is vertically centered */
+    margin-right: 5px;
+}
+.member-count-badge::after {content: "\00a0members";}
 
 .empire-label {
     font-style: italic;
