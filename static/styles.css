@@ -279,6 +279,43 @@ pre code {
     max-width: calc(100% - 10px);
 }
 
+.map-display {
+    display: flex;
+    flex-direction: row !important;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.map-key-display {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+.map-key-row {
+    display: flex;
+    align-items: center;
+}
+
+.map-key-item {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 24px; /* Adjust size */
+    height: 24px; /* Keep it equal to width for a perfect circle */
+    background-color: #000000; /* Yellow background */
+    color: #FFFFFF; /* Dark text color */
+    font-size: 12px; /* Adjust text size */
+    font-weight: bold;
+    border-radius: 50%; /* Makes it a circle */
+    border: none
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    text-align: center;
+    line-height: 1; /* Ensure text is vertically centered */
+    margin-right: 5px;
+}
+
 .nation-map-div {
     display: flex !important;
     flex-direction: column !important;
